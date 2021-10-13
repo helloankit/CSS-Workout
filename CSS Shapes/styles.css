@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yellow-bcg {
+  background-color: rgb(235, 183, 13);
+  max-width: 100%;
+  height: 15rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.yellow-bcg__circle {
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.yellow-bcg::before,
+.yellow-bcg::after {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  content: "";
+  background: rgb(235, 183, 13);
+  z-index: 100;
+  bottom: -1em;
+}
+
+.yellow-bcg::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+
+.yellow-bcg::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+.pink-bcg {
+  background: #ff6b6c;
+  padding: 3rem;
+  position: relative;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
+  margin-bottom: -10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pink-bcg__image1 {
+  clip-path: circle(18%);
+}
+
+.pink-bcg__image2 {
+  clip-path: polygon(10rem 0, 10rem 100%, 100% 12rem, 100% 12rem);
+  /* Use this utlity for getting the clipping path code  https://bennettfeely.com/clippy/ */
+}
+
+.indigo-bcg {
+  background: rgb(61, 3, 153);
+  height: 15rem;
+  padding: 3rem;
+  position: relative;
+}

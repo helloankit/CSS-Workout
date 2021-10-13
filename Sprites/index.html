@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprite</title>
+  </head>
+  <style>
+    .logo {
+      background: url("sprite.png") no-repeat -47px -264px;
+      width: 325px;
+      height: 62px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+
+    .icon {
+      margin: 1rem;
+    }
+
+    .google {
+      background: url("sprite.png") no-repeat -433px -51px;
+      width: 33px;
+      height: 33px;
+    }
+
+    .mozilla {
+      background: url("sprite.png") no-repeat -476px -51px;
+      width: 33px;
+      height: 33px;
+    }
+
+    .text {
+      background: url("sprite.png") no-repeat -270px -538px;
+      width: 410px;
+      height: 141px;
+    }
+  </style>
+
+  <body>
+    <div class="logo"></div>
+    <div class="container">
+      <div class="icon google"></div>
+      <div class="icon mozilla"></div>
+    </div>
+    <div class="text"></div>
+  </body>
+</html>
+
+<!-- 
+    Use http://www.spritecow.com/ to capture the coordinates of the sprites
+ -->

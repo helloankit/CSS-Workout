@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+.hero {
+  /* padding: 15rem; */
+  min-height: 768px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile first responsive web design. */
+.hero {
+  background-image: url(https://marklchaves.files.wordpress.com/2020/02/test2slider-mob-768.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Tablet breakpoint. */
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url(https://marklchaves.files.wordpress.com/2020/02/test2slider-tab-768.jpg);
+  }
+}
+
+/* Laptop breakpoint. */
+@media only screen and (min-width: 1024px) {
+  .hero {
+    background-image: url(https://marklchaves.files.wordpress.com/2020/02/test2slider-lt-768.jpg);
+  }
+}
+
+/* Desktop breakpoint. */
+@media only screen and (min-width: 1600px) {
+  .hero {
+    background-image: url(https://marklchaves.files.wordpress.com/2020/02/test2slider-dt-768.jpg);
+  }
+}

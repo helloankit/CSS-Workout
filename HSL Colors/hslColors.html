@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL Colors</title>
+</head>
+<body>
+  
+    <script>
+        let counter=0;
+    
+        window.addEventListener('mousemove', ()=>changeBackground());
+
+        function changeBackground(element){
+            document.body.style.backgroundColor = `hsl(${counter}, 100%, 85%)`;
+            counter+=1;
+        }
+    </script>
+
+</body>
+
+
+</html>
